@@ -1,5 +1,70 @@
 h2{
-	color: #5BE3D4;
+	color: #6C7C8A;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+	
 }
+h5{
+	color: #D7D7D7;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+	
 }
+
+h4{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+}
+body {
+    padding-left: 15px;
+	background-color: #EBEBEB;
+}
+
+.page-header{
+    background-image: url('../../static/images/digital-.jpg');
+	background-image: fill;
+    margin-top: 0;
+	margin-left: 0;
+    padding: 20px 20px 20px 40px;
+}
+.page-header h1{
+	color:#FFFFFF;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+	
+}
+
+.post{
+	border:2px solid #ffffff;
+	border-radius:10px;
+	padding: 20px 20px 20px 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #ffffff;
+	
+		
+}
+
+.post h2{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande'
+}
+
+.post-containers{
+	justify-items:center;
+	row-gap: 2rem;
+}
+. post-containers grid{
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--margin-2;
+	margin-right: var(--margin-2);
+}
+
+@media screen and (min-width: 48-px){
+		.posts-container{
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+			coloumn-gap: 2rem;
+		}
+
+
 	

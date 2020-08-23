@@ -2,16 +2,15 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		
 		
 		
         <title> Sana's Blog</title>
-		<header>
-			<h2> Sana's Blog </h2>
-		</header>
+		<div class="page-header">
+			<h1>Sana's  Blog</h1>
+		</div>
 
-        <meta charset="UTF-8">
+      
 
         <meta name="author" content="Sana Patel">
         <meta name="description" content="">
@@ -22,11 +21,15 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}"> 
     </head>
 
-    <body>
-        {% for post in posts %}
-            <h2>{{ post.title }}</h2>
-            <h5>Published: {{ post.published_date }}</h5>
-            <p>{{ post.text|linebreaksbr }}</p>
-        {% endfor %}
-    </body>
+	{% for post in posts %}
+	<div class= "post-containers grid">
+		<div class="post">
+		
+			<p><h5>published: {{ post.published_date }}</h5></p>
+			<h2>{{ post.title }}</h2>
+			<p><h4>{{ post.text|linebreaksbr }}</h4></p>
+		</div>
+		
+    </div>
+{% endfor %}
 </html>
